@@ -2,6 +2,7 @@
 const IMAP = require('imap-simple')
 const dotenv = require('dotenv').config
 const simpleParser = require('mailparser').simpleParser
+const _ = require('lodash')
 const fs = require('fs')
 
 // load environment variables
