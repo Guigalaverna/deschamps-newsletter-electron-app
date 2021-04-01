@@ -3,7 +3,7 @@ const fs = require('fs')
 const path = require('path')
 
 // get all posts
-const posts = fs.readFileSync(path.join(__dirname, 'posts'))
+const posts = fs.readdirSync(path.join(__dirname, 'posts'))
 
 const postsContainer = document.querySelector('div.posts')
 
