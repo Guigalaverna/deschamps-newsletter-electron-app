@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const getAllPosts = require('./posts')
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -12,10 +13,11 @@ function createWindow() {
     }
   })
 
-  win.loadFile(path.join(__dirname, 'public', 'index.html'))
+  win.loadFile(path.join(__dirname, '..', 'public', 'index.html'))
 }
 
 app.whenReady().then(async () => {
+  await getAllPosts()
   createWindow()
 
   app.on('activate', () => {
