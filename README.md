@@ -55,6 +55,8 @@ npm install
 npm run electron
 ```
 
+*Obs: antes de iniciar o app, preencha o arquivo `.env` com as suas informações.*
+
 ## Bugs 👾
 
 - Provavelmente ao executar o app pela primeira vez os posts da newsletter não apareçam, 
